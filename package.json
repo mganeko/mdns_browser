@@ -1,0 +1,14 @@
+{
+  "name": "mdns_browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mganeko",
+  "license": "MIT",
+  "dependencies": {
+    "mdns-js": "^1.0.3"
+  }
+}
