@@ -34,6 +34,6 @@ browser.on('update', function onUpdate(data) {
 });
 
 //stop after timeout
-setTimeout(function onTimeout() {
+setTimeout(function () {
   browser.stop();
 }, TIMEOUT);
