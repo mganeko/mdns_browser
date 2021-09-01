@@ -7,28 +7,22 @@
 //    npm isntall mdns-js
 //
 // usage
-//    node browser.js servicename
+//    node browser_googlezone.js
 
 
 const mdns = require('mdns-js');
 
 const TIMEOUT = 5000; //5 seconds
 
-let browser = null;
-if (process.argv.length > 2) {
-  const service = process.argv[2];
-  console.warn('service name =', service)
-  browser = mdns.createBrowser(mdns.tcp(service));
-}
-else {
-  browser = mdns.createBrowser();
-}
+
+//const browser = mdns.createBrowser(); //defaults to mdns.ServiceType.wildcard
+//const browser = mdns.createBrowser(mdns.tcp('googlecast'));
+const browser = mdns.createBrowser(mdns.tcp('googlezone'));
 
 browser.on('ready', function onReady() {
   console.warn('browser is ready');
   browser.discover();
 });
-
 
 browser.on('update', function onUpdate(data) {
   console.log('data:', data);
