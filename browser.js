@@ -4,7 +4,7 @@
 //     npm https://www.npmjs.com/package/mdns-js
 //
 // prepare
-//    npm isntall mdns-js
+//    npm install mdns-js
 //
 // usage
 //    node browser.js servicename
