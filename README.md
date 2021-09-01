@@ -11,14 +11,14 @@ Node.js で動きます。(Mac, Linux, Windows)
 モジュールをインストール
 
 ```
-$ npm isntall
+$ npm install
 ```
 
 または
 
 
 ```
-$ npm isntall mdns-js
+$ npm install mdns-js
 ```
 
 # 使い方
